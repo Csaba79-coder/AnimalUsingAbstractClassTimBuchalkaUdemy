@@ -1,0 +1,35 @@
+= AnimalUsingAbstractClassTimBuchalkaUdemy
+
+Abstract Class
+
+Good to know by Udemy video (Tim Buchalka!)
+
+How to decide whether to use abstract or interface.
+
+First question:
+
+* We have to consider the relationships
+
+The relationships can be as follows:
+
+        - "is a"
+        - "has a"
+        - "can"
+
+E.g.:
+
+Dog is an Animal & Bird is an Animal -> extends (both inherits from the Animal Class) it is better than to implement an Animal interface!
+
+Parrot is a Bird, so it is good to inherent it from a Bird based class!!!
+
+Bat can fly but it is not a bird! And not all bird can fly!!! This is how you decide to implement a CanFly interface for such reason!!! -> that means both Bat Class and Bird class can implement it! This case the interface gives us more flexibility!
+
+As all Animal eats and breathes we left the method there in the abstract class with abstract methods (that means all the children class must implement it!)
+
+Abstract: an abstract class can have a member variables that are inherited, something that cannot be done in interface!
+
+Interface: interface can have variables, that are all public static final variables (that are essentially gonna be constant values that should never change with a static scope!).
+
+They have to be static as nonstatic variables require an instance, and of course you cannot instantiate an interface or an abstract!!!
+
+Interface cannot have constructors but abstract classes can.
